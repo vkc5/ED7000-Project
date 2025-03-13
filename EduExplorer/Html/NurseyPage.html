@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/NurseyPage.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NurseyPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="background">
+        <nav class="menu-bar">
+            <div class="logo">
+                <a href="HomePage.html"><img src="../image/NurseryImages/edu.png" alt="Edu Explorer Logo"></a>
+                <div class="logo-text"><br>
+                    <span class="edu"> Edu <br> Explorer</span><br>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="HomePage.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Levels <i class="fas fa-caret-down caret-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NurseyPage.html">Nursey</a></li>
+                        <li><a href="SchoolPage.html">K-12</a></li>
+                        <li><a href="UniversityPage.html">Colleges</a></li>
+                    </ul>
+                </li>
+                <li><a href="OurStoryPage.html">About Us</a></li>
+                <li><a href="MakingOfPage.html">MakingOf</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#" id="showRegistration"><i><img src="../image/NurseryImages/user-interface.png"
+                            alt="user-interface" /></i></a>
+                <div id="userName" style="display: inline"></div>
+            </div>
+        </nav>
+
+        <div id="descAndStat" class="Container-NurseryDesc">
+            <div class="nurseryDescText">
+                <h1>Welcome to Nursery Page</h1>
+                <p>
+                    Nurseries in Bahrain cater to children aged 2 months to 6 years, offering bilingual education
+                    and
+                    following curricula such as
+                    the British EYFS.They emphasize all-round development through play, learning, and safe
+                    facilities.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-counter">
+        <h1>Nursery journey in numbers</h1>
+        <div class="counter">
+            <div class="number" data-target="2000">0</div>
+            <h3>Students</h3>
+        </div>
+        <div class="counter">
+            <div class="number" data-target="100">0</div>
+            <h3>Nurseries</h3>
+        </div>
+        <div class="counter">
+            <div class="number" data-target="10">0</div>
+            <h3>Average students/class</h3>
+        </div>
+    </div>
+    <div class="Nursey-section-container">
+        <div class="Nursey-section">
+            <div class="header">
+                <h2>Explore Nursery Schools</h2>
+                <img src="../image/NurseryImages/filter.png" alt="Filter Icon" class="filter-icon" id="filter-icon">
+            </div>
+            <div class="Nursey-grid">
+                <div class="Nursey-item">
+                    <img src="../image/NurseryImages/Evolution.JPG" alt="Evolution Childcare">
+                    <h3>Evolution Childcare</h3>
+                    <a href="#" class="read-more" data-info="Evolution">Read More</a>
+                </div>
+                <div class="Nursey-item">
+                    <img src="../image/NurseryImages/KG Kids.jpg" alt="KG Kids">
+                    <h3>KG Kids</h3>
+                    <a href="#" class="read-more" data-info="KG">Read More</a>
+                </div>
+                <div class="Nursey-item">
+                    <img src="../image/NurseryImages/Little Gems Pre School.jpg" alt="Little Gems Pre School">
+                    <h3>Little Gems Preschool</h3>
+                    <a href="#" class="read-more" data-info="Little">Read More</a>
+                </div>
+                <div class="Nursey-item">
+                    <img src="../image/NurseryImages/Masabeeh Al Amal Preschool.jpg" alt="Masabeeh Al Amal Preschool">
+                    <h3>Masabeeh Al Amal Preschool</h3>
+                    <a href="#" class="read-more" data-info="Masabeeh">Read More</a>
+                </div>
+                <div class="Nursey-item">
+                    <img src="../image/NurseryImages/Rawan-Preschool-1-1204x800.jpg" alt="Rawan Preschool">
+                    <h3>Rawan Preschool</h3>
+                    <a href="#" class="read-more" data-info="Rawan">Read More</a>
+                </div>
+                <div class="Nursey-item">
+                    <img src="../image/NurseryImages/Reach Nursery.jpg" alt="Reach Nursery">
+                    <h3>Reach Nursery</h3>
+                    <a href="#" class="read-more" data-info="Reach">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <div class="popup-image">
+                <img id="popup-image" src="" alt="University Image">
+            </div>
+            <div class="popup-info" id="popup-info"></div>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <!-- Rating Modal -->
+    <div id="rating-modal" class="rating-modal">
+        <span class="close">&times;</span>
+        <h2>Rate Your Experience</h2>
+        <div class="rating-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <textarea id="feedback" rows="4" cols="50" placeholder="Provide your feedback..."></textarea>
+        <div id="feedback-error" class="feedback-error">Please provide a rating or feedback before submitting.</div>
+        <button id="submit-feedback" class="rate-me-button">Submit</button>
+    </div>
+
+    <div id="thank-you-message">Thanks for your feedback!</div>
+
+    <div id="filter-panel" class="filter-panel">
+        <div class="filter-options">
+            <label for="location-filter">Location</label>
+            <!-- The locations will be populated dynamically -->
+            <select id="location-filter">
+                <option value="">Select Location</option>
+            </select>
+
+            <label for="price-filter">Price</label>
+            <input type="range" id="price-filter" min="0" max="18000" step="100">
+            <span id="price-output">BD 9,000</span>
+
+            <label>Public/Private</label>
+            <div class="circle-group">
+                <input type="radio" id="public" name="type" value="Public">
+                <label for="public">Public</label>
+
+                <input type="radio" id="private" name="type" value="Private">
+                <label for="private">Private</label>
+            </div>
+
+            <button id="apply-filters">Apply Filters</button>
+            <button id="reset-filters">Reset Filters</button>
+        </div>
+    </div>
+
+    <div id="registrationForm" style="display: none;">
+        <form>
+            <h1>Enter your details!</h1>
+            <input type="text" id="firstName" placeholder="First Name (3 letters at least)">
+            <input type="text" id="lastName" placeholder="Last Name (3 letters at least)">
+            <input type="email" id="email" placeholder="Email (Should include @ sign)">
+            <input type="tel" id="phoneNumber" placeholder="Phone Number (Exactly 8 digits)">
+            <button type="submit" id="submitButton">Register</button>
+            <div id="message"></div>
+        </form>
+    </div>
+    <div class="faq-container">
+        <h1>FAQ for Nursery</h1>
+        <div class="faq-options">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('tour')">
+                    <span>Can parents schedule a tour of all the nurseries?</span>
+                    <i class="dropdown-arrow"></i>
+                </div>
+                <div class="faq-answer" id="tour">
+                    Yes, parents can schedule a tour by contacting the nursery through their website.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('communication')">
+                    <span>How do parents communicate about their child’s progress?</span>
+                    <i class="dropdown-arrow"></i>
+                </div>
+                <div class="faq-answer" id="communication">
+                    All nurseries listed provide regular updates through parent-teacher meetings, progress reports, and
+                    daily communication logs.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('safety')">
+                    <span>How do you ensure the safety of the children?</span>
+                    <i class="dropdown-arrow"></i>
+                </div>
+                <div class="faq-answer" id="safety">
+                    All nurseries have strict safety protocols, including secure entry systems, background checks for
+                    staff, and regular safety drills.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('meals')">
+                    <span>Are meals provided in all nurseries?</span>
+                    <i class="dropdown-arrow"></i>
+                </div>
+                <div class="faq-answer" id="meals">
+                    Yes, all nurseries provide healthy meals and snacks. Parents are also welcome to bring their own
+                    food.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('curriculum')">
+                    <span>What curriculum do the nurseries follow?</span>
+                    <i class="dropdown-arrow"></i>
+                </div>
+                <div class="faq-answer" id="curriculum">
+                    Nurseries follow a play-based curriculum that focuses on social, emotional, and cognitive
+                    development.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <img src="../image/NurseryImages/instagram.png" alt="Instagram">
+            <img src="../image/NurseryImages/social-media.png" alt="Twitter">
+            <img src="../image/NurseryImages/linkedin.png" alt="LinkedIn">
+        </div>
+        <p>&copy; 2024 Edu Explorer. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/NurseyPage.js"></script>
+</body>
+
+</html>

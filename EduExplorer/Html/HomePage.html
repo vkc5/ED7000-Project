@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/HomePage.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduExplorer</title>
+</head>
+
+<body>
+    <script src="../JavaScript/HomePage.js"></script>
+    <nav class="menu-bar">
+        <div class="logo">
+            <a href="HomePage.html"><img src="../image/HomepageImages/edu.png" alt="Edu Explorer Logo"></a>
+            <div class="logo-text"><br>
+                <span class="edu"> Edu <br> Explorer</span><br>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="HomePage.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Levels <i class="fas fa-caret-down caret-icon"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="NurseyPage.html">Nursey</a></li>
+                    <li><a href="SchoolPage.html">K-12</a></li>
+                    <li><a href="UniversityPage.html">Colleges</a></li>
+                </ul>
+            </li>
+            <li><a href="OurStoryPage.html">About Us</a></li>
+            <li><a href="MakingOfPage.html">MakingOf</a></li>
+
+        </ul>
+        <div class="icons">
+            <a href="#" id="showRegistration"><i><img src="../image/HomepageImages/user-interface.png"
+                        alt="user-interface" /></i></a>
+            <div id="userName" style="display: inline"></div>
+        </div>
+    </nav>
+    <div class="hero-section">
+        <h1>Inspiring Academics for Young Learners!</h1>
+        <p>EduExplorer brings together information about nurseries, K-12, and colleges. Our platform provides
+            comprehensive details to help you make informed decisions about education.<br><br>Explore schools tailored
+            to
+            your aspirations</p>
+        <div class="link-box-container">
+            <a href="NurseyPage.html" class="link-box">Nursery</a>
+            <a href="SchoolPage.html" class="link-box">K-12</a>
+            <a href="UniversityPage.html" class="link-box">Colleges</a>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+    </div>
+
+    <div id="registrationForm" style="display: none;">
+        <form>
+            <h1>Enter your details!</h1>
+            <input type="text" id="firstName" placeholder="First Name (3 letters at least)">
+            <input type="text" id="lastName" placeholder="Last Name (3 letters at least)">
+            <input type="email" id="email" placeholder="Email (Should include @ sign)">
+            <input type="tel" id="phoneNumber" placeholder="Phone Number (Exactly 8 digits)">
+            <button type="submit" id="submitButton">Register</button>
+            <div id="message"></div>
+        </form>
+    </div>
+</body>
+
+</html>

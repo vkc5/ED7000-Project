@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/SchoolPage.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="background">
+        <nav class="menu-bar">
+            <div class="logo">
+                <a href="HomePage.html"><img src="../image/SchoolPageImages/edu.png" alt="Edu Explorer Logo"></a>
+                <div class="logo-text"><br>
+                    <span class="edu"> Edu <br> Explorer</span><br>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="HomePage.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Levels <i class="fas fa-caret-down caret-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NurseyPage.html">Nursey</a></li>
+                        <li><a href="SchoolPage.html">K-12</a></li>
+                        <li><a href="UniversityPage.html">Colleges</a></li>
+                    </ul>
+                </li>
+                <li><a href="OurStoryPage.html">About Us</a></li>
+                <li><a href="MakingOfPage.html">MakingOf</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#" id="showRegistration"><i><img src="../image/SchoolPageImages/user-interface.png"
+                            alt="user-interface" /></i></a>
+                <div id="userName" style="display: inline"></div>
+            </div>
+        </nav>
+
+        <div id="descAndStat" class="container-schoolDescText">
+            <div class="schoolDescText">
+                <h1>Welcome to Schools Page</h1>
+                <p>
+                    Schools in Bahrain cater to students aged 4 to 18 years, offering bilingual education and various
+                    curricula such as British, American, IB, and Bahraini National programs. They focus on academic
+                    excellence, skill development, and character building through engaging learning environments,
+                    extracurricular activities, and modern facilities.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-counter">
+        <h1>School journey in numbers</h1>
+        <div class="counter">
+            <div class="number" data-target="3000">0</div>
+            <h3>Students</h3>
+        </div>
+        <div class="counter">
+            <div class="number" data-target="120">0</div>
+            <h3>Schools</h3>
+        </div>
+        <div class="counter">
+            <div class="number" data-target="20">0</div>
+            <h3>Average students/class</h3>
+        </div>
+    </div>
+
+    <div class="School-section-container">
+        <div class="School-section">
+            <div class="header">
+                <h2>Explore K-12 Schools</h2>
+                <img src="../image/SchoolPageImages/filter.png" alt="Filter Icon" class="filter-icon" id="filter-icon">
+            </div>
+            <div class="School-grid">
+                <div class="School-item">
+                    <img src="../image/SchoolPageImages/Al Noor International School.jpg"
+                        alt="Al Noor International School">
+                    <h3>Al Noor International School</h3>
+                    <a href="#" class="read-more" data-info="Noor">Read More</a>
+                </div>
+                <div class="School-item">
+                    <img src="../image/SchoolPageImages/Al-Hidd Intermediate Primary Boys.jpg"
+                        alt="Al-Hidd Intermediate Primary School">
+                    <h3>Al-Hidd Intermediate School</h3>
+                    <a href="#" class="read-more" data-info="Hidd">Read More</a>
+                </div>
+                <div class="School-item">
+                    <img src="../image/SchoolPageImages/Ibn Kuldoon National School.jpg"
+                        alt="Ibn Kuldoon National School">
+                    <h3>Ibn Kuldoon National School</h3>
+                    <a href="#" class="read-more" data-info="Kuldoon">Read More</a>
+                </div>
+                <div class="School-item">
+                    <img src="../image/SchoolPageImages/Philippine School.jpeg" alt="Philippine School">
+                    <h3>Philippine School</h3>
+                    <a href="#" class="read-more" data-info="Philippine">Read More</a>
+                </div>
+                <div class="School-item">
+                    <img src="../image/SchoolPageImages/Qurtoba Intermediate Girls.jpg"
+                        alt="Qurtoba Intermediate School">
+                    <h3>Qurtoba Intermediate School</h3>
+                    <a href="#" class="read-more" data-info="Qurtoba">Read More</a>
+                </div>
+                <div class="School-item">
+                    <img src="../image/SchoolPageImages/Um Kalthoom Intermediate Girls.jpg"
+                        alt="Um Kalthoom Intermediate School">
+                    <h3>Um Kalthoom Intermediate School</h3>
+                    <a href="#" class="read-more" data-info="Kalthoom">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <div class="popup-image">
+                <img id="popup-image" src="" alt="University Image">
+            </div>
+            <div class="popup-info" id="popup-info"></div>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <!-- Rating Modal -->
+    <div id="rating-modal" class="rating-modal">
+        <span class="close">&times;</span>
+        <h2>Rate Your Experience</h2>
+        <div class="rating-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <textarea id="feedback" rows="4" cols="50" placeholder="Provide your feedback..."></textarea>
+        <div id="feedback-error" class="feedback-error">Please provide a rating or feedback before submitting.</div>
+        <button id="submit-feedback" class="rate-me-button">Submit</button>
+    </div>
+
+    <div id="thank-you-message">Thanks for your feedback!</div>
+
+    <div id="filter-panel" class="filter-panel">
+        <div class="filter-options">
+            <label for="location-filter">Location</label>
+            <!-- The locations will be populated dynamically -->
+            <select id="location-filter">
+                <option value="">Select Location</option>
+            </select>
+
+            <label for="price-filter">Price</label>
+            <input type="range" id="price-filter" min="0" max="18000" step="100">
+            <span id="price-output">BD 9,000</span>
+
+            <label>Public/Private</label>
+            <div class="circle-group">
+                <input type="radio" id="public" name="type" value="Public">
+                <label for="public">Public</label>
+
+                <input type="radio" id="private" name="type" value="Private">
+                <label for="private">Private</label>
+            </div>
+
+            <button id="apply-filters">Apply Filters</button>
+            <button id="reset-filters">Reset Filters</button>
+        </div>
+    </div>
+
+    <div id="registrationForm" style="display: none;">
+        <form>
+            <h1>Enter your details!</h1>
+            <input type="text" id="firstName" placeholder="First Name (3 letters at least)">
+            <input type="text" id="lastName" placeholder="Last Name (3 letters at least)">
+            <input type="email" id="email" placeholder="Email (Should include @ sign)">
+            <input type="tel" id="phoneNumber" placeholder="Phone Number (Exactly 8 digits)">
+            <button type="submit" id="submitButton">Register</button>
+            <div id="message"></div>
+        </form>
+    </div>
+    <div class="news-section">
+        <h2>General Education News</h2>
+        <div class="news-cards">
+            <div class="news-card">
+                <img src="../image/SchoolPageImages/Government.png" alt="Government" class="news-image">
+                <h3>Bahrain Announces New Educational Reforms for 2024</h3>
+            </div>
+            <div class="news-card">
+                <img src="../image/SchoolPageImages/PublicSchools.png" alt="PublicSchools" class="news-image">
+                <h3>Increased Funding for Public Schools in Bahrain</h3>
+            </div>
+            <div class="news-card">
+                <img src="../image/SchoolPageImages/STEM.png" alt="STEM" class="news-image">
+                <h3>Bahrain Invests in STEM Education Initiatives</h3>
+            </div>
+            <div class="news-card">
+                <img src="../image/SchoolPageImages/Ranking.png" alt="Ranking" class="news-image">
+                <h3>Bahrain Improves International Ranking in Education</h3>
+            </div>
+            <div class="news-card">
+                <img src="../image/SchoolPageImages/Childhood.png" alt="Childhood" class="news-image">
+                <h3>Government Launches Initiative for Early Childhood Education</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <img src="../image/SchoolPageImages/instagram.png" alt="Instagram">
+            <img src="../image/SchoolPageImages/social-media.png" alt="Twitter">
+            <img src="../image/SchoolPageImages/linkedin.png" alt="LinkedIn">
+        </div>
+        <p>&copy; 2024 Edu Explorer. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/SchoolPage.js"></script>
+</body>
+
+</html>

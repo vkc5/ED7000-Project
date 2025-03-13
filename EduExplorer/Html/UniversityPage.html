@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/UniversityPage.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniversityPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="background">
+        <nav class="menu-bar">
+            <div class="logo">
+                <a href="HomePage.html"><img src="../image/UniversityImages/edu.png" alt="Edu Explorer Logo"></a>
+                <div class="logo-text"><br>
+                    <span class="edu"> Edu <br> Explorer</span><br>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="HomePage.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Levels <i class="fas fa-caret-down caret-icon"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NurseyPage.html">Nursey</a></li>
+                        <li><a href="SchoolPage.html">K-12</a></li>
+                        <li><a href="UniversityPage.html">Colleges</a></li>
+                    </ul>
+                </li>
+                <li><a href="OurStoryPage.html">About Us</a></li>
+                <li><a href="MakingOfPage.html">MakingOf</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#" id="showRegistration"><i><img src="../image/UniversityImages/user-interface.png"
+                            alt="user-interface" /></i></a>
+                <div id="userName" style="display: inline"></div>
+            </div>
+        </nav>
+        <div id="descAndStat" class="container-nurseryDescText">
+            <div class="collegeDescText">
+                <h1>Welcome to College Page</h1>
+                <p>
+                    Colleges in Bahrain provide higher education for diplomas, bachelor's, and postgraduate degrees.
+                    They offer programs in fields like engineering, business, arts, and technology with bilingual or
+                    specialized instruction. Colleges focus on academic excellence, research, and practical skills to
+                    prepare students for global careers.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-counter">
+        <h1>college journey in numbers</h1>
+        <div class="counter">
+            <div class="number" data-target="30000">0</div>
+            <h3>Students</h3>
+        </div>
+        <div class="counter">
+            <div class="number" data-target="100">0</div>
+            <h3>colleges</h3>
+        </div>
+        <div class="counter">
+            <div class="number" data-target="25">0</div>
+            <h3>Average students/class</h3>
+        </div>
+    </div>
+
+    <div class="college-section-container">
+        <div class="college-section">
+            <div class="header">
+                <h2>Explore Colleges</h2>
+                <img src="../image/UniversityImages/filter.png" alt="Filter Icon" class="filter-icon" id="filter-icon">
+            </div>
+            <div class="college-grid" id="college-grid">
+                <div class="college-item">
+                    <img src="../image/UniversityImages/Applied Science University.jpg"
+                        alt="Applied Science University">
+                    <h3>Applied Science University</h3>
+                    <a href="#" class="read-more" data-info="asu">Read More</a>
+                </div>
+                <div class="college-item">
+                    <img src="../image/UniversityImages/British University.jpeg" alt="British University">
+                    <h3>British University</h3>
+                    <a href="#" class="read-more" data-info="bu">Read More</a>
+                </div>
+                <div class="college-item">
+                    <img src="../image/UniversityImages/RCSI.jpg" alt="RCSI">
+                    <h3>RCSI</h3>
+                    <a href="#" class="read-more" data-info="rcsi">Read More</a>
+                </div>
+                <div class="college-item">
+                    <img src="../image/UniversityImages/Bahrain Polytechnic.jpg" alt="Bahrain Polytechnic">
+                    <h3>Bahrain Polytechnic</h3>
+                    <a href="#" class="read-more" data-info="bp">Read More</a>
+                </div>
+                <div class="college-item">
+                    <img src="../image/UniversityImages/University of Bahrain.jpg" alt="University of Bahrain">
+                    <h3>University of Bahrain</h3>
+                    <a href="#" class="read-more" data-info="uob">Read More</a>
+                </div>
+                <div class="college-item">
+                    <img src="../image/UniversityImages/BIBF-Building.jpg" alt="BIBF University">
+                    <h3>BIBF University</h3>
+                    <a href="#" class="read-more" data-info="bibf">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <div class="popup-image">
+                <img id="popup-image" src="" alt="University Image">
+            </div>
+            <div class="popup-info" id="popup-info"></div>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <!-- Rating Modal -->
+    <div id="rating-modal" class="rating-modal">
+        <span class="close">&times;</span>
+        <h2>Rate Your Experience</h2>
+        <div class="rating-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <textarea id="feedback" rows="4" cols="50" placeholder="Provide your feedback..."></textarea>
+        <div id="feedback-error" class="feedback-error">Please provide a rating or feedback before submitting.</div>
+        <button id="submit-feedback" class="rate-me-button">Submit</button>
+    </div>
+
+    <div id="thank-you-message">Thanks for your feedback!</div>
+
+    <div id="filter-panel" class="filter-panel">
+        <div class="filter-options">
+            <label for="location-filter">Location</label>
+            <!-- The locations will be populated dynamically -->
+            <select id="location-filter">
+                <option value="">Select Location</option>
+            </select>
+
+            <label for="price-filter">Price</label>
+            <input type="range" id="price-filter" min="0" max="18000" step="100">
+            <span id="price-output">BD 9,000</span>
+
+            <label>Public/Private</label>
+            <div class="circle-group">
+                <input type="radio" id="public" name="type" value="Public">
+                <label for="public">Public</label>
+
+                <input type="radio" id="private" name="type" value="Private">
+                <label for="private">Private</label>
+            </div>
+
+            <button id="apply-filters">Apply Filters</button>
+            <button id="reset-filters">Reset Filters</button>
+        </div>
+    </div>
+
+    <div id="registrationForm" style="display: none;">
+        <form>
+            <h1>Enter your details!</h1>
+            <input type="text" id="firstName" placeholder="First Name (3 letters at least)">
+            <input type="text" id="lastName" placeholder="Last Name (3 letters at least)">
+            <input type="email" id="email" placeholder="Email (Should include @ sign)">
+            <input type="tel" id="phoneNumber" placeholder="Phone Number (Exactly 8 digits)">
+            <button type="submit" id="submitButton">Register</button>
+            <div id="message"></div>
+        </form>
+    </div>
+
+    <div class="events-section">
+        <h2>Upcoming Events</h2>
+    </div>
+    <div class="event-cards">
+        <div class="event-card">
+            <img src="../image/UniversityImages/carnival-tent.png" alt="Poly Wonderland" class="event-image">
+            <h3>Poly Wonderland</h3>
+            <p><i class="fas fa-calendar-alt"></i> 28/11/2024</p>
+            <p><i class="fas fa-clock"></i> 6:00 PM - 9:00 PM</p>
+            <p><i class="fas fa-map-marker-alt"></i> Polytechnic</p>
+        </div>
+    
+        <div class="event-card">
+            <img src="../image/UniversityImages/investment.png" alt="Word Islamic Finance" class="event-image">
+            <h3>Word Islamic Finance (BIBF)</h3>
+            <p><i class="fas fa-calendar-alt"></i> 27/11/2024</p>
+            <p><i class="fas fa-clock"></i> 6:00 PM - 10:00 PM</p>
+            <p><i class="fas fa-map-marker-alt"></i> Wyndham Grand Manama</p>
+        </div>
+    
+        <div class="event-card">
+            <img src="../image/UniversityImages/students.png" alt="UK Alumni Redemption" class="event-image">
+            <h3>UK Alumni Redemption 2024</h3>
+            <p><i class="fas fa-calendar-alt"></i> 02/11/2024</p>
+            <p><i class="fas fa-clock"></i> 7:00 PM - 10:00 PM</p>
+            <p><i class="fas fa-map-marker-alt"></i> RCSI</p>
+        </div>
+    
+        <div class="event-card">
+            <img src="../image/UniversityImages/movie.png" alt="Movie Night" class="event-image">
+            <h3>Movie Night</h3>
+            <p><i class="fas fa-calendar-alt"></i> 24/11/2024</p>
+            <p><i class="fas fa-clock"></i> 5:00 PM</p>
+            <p><i class="fas fa-map-marker-alt"></i> ASU</p>
+        </div>
+    
+        <div class="event-card">
+            <img src="../image/UniversityImages/match.png" alt="Football Tournament" class="event-image">
+            <h3>Football Tournament</h3>
+            <p><i class="fas fa-calendar-alt"></i> 30/11/2024</p>
+            <p><i class="fas fa-clock"></i> 5:00 PM - 10:30 PM</p>
+            <p><i class="fas fa-map-marker-alt"></i> The British School of Bahrain</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <img src="../image/UniversityImages/instagram.png" alt="Instagram">
+            <img src="../image/UniversityImages/social-media.png" alt="Twitter">
+            <img src="../image/UniversityImages/linkedin.png" alt="LinkedIn">
+        </div>
+        <p>&copy; 2024 Edu Explorer. All rights reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/UniversityPage.js"></script>
+</body>
+
+</html>

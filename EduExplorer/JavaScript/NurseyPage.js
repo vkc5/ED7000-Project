@@ -29,70 +29,64 @@ document.addEventListener('DOMContentLoaded', function () {
     let hasRated = false; // To track if a star rating was made
 
     const NurseyData = {
-        Evolution: {
-            name: "Evolution Childcare",
-            location: "Juffair",
-            telephone: "17669079",
-            fees: 775,
-            Nurseries: "Private",
-            ages: "6 months to 6 years",
-            workingHours: "Sunday to Thursday [6:30 am - 4:00 pm]",
-            website: "https://www.evolution-childcare.co.uk/",
+        CISA: {
+            name: "CISA Certification Training",
+            location: "Isa Town",
+            telephone: "-",
+            fees: 900,
+            Level: "Beginner",
+            workingHours: "10 hours per week",
+            website: "https://mildaintrainings.com/cyber-security/bahrain-bh/",
             image: "../image/NurseryImages/Evolution.JPG"
         },
-        KG: {
-            name: "KG Kids",
+        Hacker: {
+            name: "Certified Ethical Hacker",
             location: "Lary Al Shaikh",
-            telephone: "17663556",
+            telephone: "13300005",
             fees: 550,
-            Nurseries: "Public",
-            ages: "18 months to 6 years",
-            workingHours: "Sunday to Thursday [7:00 am - 2:00 pm]",
-            website: "https://www.kgkids.com/",
+            Level: "Intermediate",
+            workingHours: "Contact academy for schedule",
+            website: "https://learnerspoint.org/cyber-security-courses-in-bahrain",
             image: "../image/NurseryImages/KG Kids.jpg"
         },
-        Little: {
-            name: "Little Gems Preschool",
+        CompTIA: {
+            name: "CompTIA Security+",
             location: "Saar",
             telephone: "17694356",
             fees: 795,
-            Nurseries: "Private",
-            ages: "18 months to 4 years",
-            workingHours: "Sunday to Thursday [7:30 am - 1:30 pm]",
-            website: "https://littlegemsbh.com/",
+            Level: "Beginner",
+            workingHours: "32 hours",
+            website: "https://www.edoxi.com/bahrain/cyber-security-courses",
             image: "../image/NurseryImages/Little Gems Pre School.jpg"
         },
-        Masabeeh: {
-            name: "Masabeeh Al Amal Preschool",
+        Cyber: {
+            name: "Certified Cyber Security Professional",
             location: "Manama",
             telephone: "17776664",
-            fees: 223,
-            Nurseries: "Public",
-            ages: "2 years to 4 years",
-            workingHours: "Sunday to Thursday [7:30 am - 12:30 pm]",
-            website: "https://bahrainschoolsguide.com/masabeeh-al-amal-preschool- spg/",
+            fees: 1595,
+            Level: "Intermediate",
+            workingHours: "52 hours",
+            website: "https://www.theknowledgeacademy.com/bh/courses/cyber-security-training/",
             image: "../image/NurseryImages/Masabeeh Al Amal Preschool.jpg"
         },
-        Rawan: {
-            name: "Rawan Preschool",
-            location: "Bu Quwah",
-            telephone: "17179373",
-            fees: 550,
-            Nurseries: "Public",
-            ages: "3 years to 6 years",
-            workingHours: "Sunday to Thursday [7:00 am - 2:00 pm]",
-            website: "https://www.rawanpreschool.net/en/",
-            image: "../image/NurseryImages/Rawan-Preschool-1-1204x800.jpg"
+        Fundamentals: {
+            name: "Cybersecurity Fundamentals",
+            location: "Online",
+            telephone: "-",
+            fees: 0,
+            Level: "Beginner",
+            workingHours: "Self-paced",
+            website: "https://www.eccouncil.org/cybersecurity-exchange/cyber-novice/free-cybersecurity-courses-beginners/",
+            image: "../image/NurseryImages/Evolution.JPG"
         },
-        Reach: {
-            name: "Reach Nursery",
-            location: "Isa Town",
+        Information: {
+            name: "Information Security Professional",
+            location: "Online",
             telephone: "17663280",
             fees: 4000,
-            Nurseries: "Private",
-            ages: "4 months to 4 years",
-            workingHours: "Sunday to Thursday [7:00 am - 1:00 pm]",
-            website: "https://bahrainschoolsguide.com/reachnursery-spg/",
+            Level: "Intermediate",
+            workingHours: "Self-paced",
+            website: "https://www.simplilearn.com/cyber-security",
             image: "../image/NurseryImages/Reach Nursery.jpg"
         }
     };
@@ -118,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
             NurseyItem.classList.add('Nursey-item');
             NurseyItem.setAttribute('data-location', Nursey.location);
             NurseyItem.setAttribute('data-fees', parseFloat(Nursey.fees));
-            NurseyItem.setAttribute('data-type', Nursey.Nurseries);
+            NurseyItem.setAttribute('data-type', Nursey.Level);
 
             NurseyItem.innerHTML = `
                 <img src="${Nursey.image}" alt="${Nursey.name}">
@@ -142,9 +136,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         <h2>Information Card</h2>
                         <p><strong>Location:</strong> ${data.location}</p>
                         <p><strong>Telephone:</strong> ${data.telephone}</p>
-                        <p><strong>Nurseries:</strong> ${data.Nurseries}</p>
+                        <p><strong>Level:</strong> ${data.Level}</p>
                         <p><strong>Fees:</strong>  ${data.fees} BD</p>
-                        <p><strong>Working Hours:</strong> ${data.workingHours}</p>
+                        <p><strong>Hours:</strong> ${data.workingHours}</p>
                         <p><strong>Link to Website:</strong> <a href="${data.website}" target="_blank">${data.website}</a></p>
                         <a href="#" class="rate-me-button" id="rate-me-button">Rate Me</a>
                     `;
@@ -252,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const Nursey = NurseyData[key];
             const matchesLocation = selectedLocation === "" || Nursey.location === selectedLocation;
             const matchesPrice = parseFloat(Nursey.fees) <= selectedPrice;
-            const matchesType = !selectedType || Nursey.Nurseries === selectedType;
+            const matchesType = !selectedType || Nursey.Level === selectedType;
             return matchesLocation && matchesPrice && matchesType;
         }).reduce((obj, key) => {
             obj[key] = NurseyData[key];

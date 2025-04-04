@@ -29,71 +29,65 @@ document.addEventListener('DOMContentLoaded', function () {
     let hasRated = false; // To track if a star rating was made
 
     const SchoolData = {
-        Noor: {
-            name: "Al Noor International School",
-            location: "Sitra",
-            telephone: "17736773",
-            fees: 738,
-            Schools: "Private",
-            ages: "3 years to 18 years",
-            workingHours: "Sunday to Thursday [7:00 am - 2:00 pm]",
-            website: "https://alnoor.com.bh/",
-            image: "../image/SchoolPageImages/Al Noor International School.jpg"
-        },
-        Hidd: {
-            name: "Al-Hidd Intermediate School",
-            location: "Muharraq",
-            telephone: "17671315",
-            fees: 0,
-            Schools: "Public",
-            ages: "11 years to 15 years",
-            workingHours: "Sunday to Thursday [6:00 am - 2:30 pm]",
-            website: "https://moe.gov.bh/",
-            image: "../image/SchoolPageImages/Al-Hidd Intermediate Primary Boys.jpg"
-        },
-        Kuldoon: {
-            name: "Ibn Kuldoon National School",
+        CISA: {
+            name: "CISA Certification Training",
             location: "Isa Town",
-            telephone: "17780661",
-            fees: 4980,
-            Schools: "Private",
-            ages: "4 years to 18 years",
-            workingHours: "Sunday to Thursday [7:00 am - 2:00 pm]",
-            website: "https://www.ikns.edu.bh/",
-            image: "../image/SchoolPageImages/Ibn Kuldoon National School.jpg"
+            telephone: "-",
+            fees: 900,
+            Level: "Beginner",
+            workingHours: "10 hours per week",
+            website: "https://mildaintrainings.com/cyber-security/bahrain-bh/",
+            image: "../image/SchoolPageImages/Cybersecurity1.png"
         },
-        Philippine: {
-            name: "Philippine School",
-            location: "A’ali",
-            telephone: "17645451",
-            fees: 1200,
-            Schools: "Private",
-            ages: "3 years to 18 years",
-            workingHours: "Sunday to Thursday [7:00 am - 3:00 pm]",
-            website: "https://psb.edu.bh/",
-            image: "../image/SchoolPageImages/Philippine School.jpeg"
+        Hacker: {
+            name: "Certified Ethical Hacker",
+            location: "Lary Al Shaikh",
+            telephone: "13300005",
+            fees: 550,
+            Level: "Intermediate",
+            workingHours: "Contact academy for schedule",
+            website: "https://learnerspoint.org/cyber-security-courses-in-bahrain",
+            image: "../image/SchoolPageImages/Cybersecurity2.png"
         },
-        Qurtoba: {
-            name: "Qurtoba Intermediate School",
+        CompTIA: {
+            name: "CompTIA Security+",
+            location: "Saar",
+            telephone: "17694356",
+            fees: 795,
+            Level: "Beginner",
+            workingHours: "32 hours",
+            website: "https://www.edoxi.com/bahrain/cyber-security-courses",
+            image: "../image/SchoolPageImages/Cybersecurity3.png"
+        },
+        Cyber: {
+            name: "Certified Cyber Security Professional",
             location: "Manama",
-            telephone: "17403415",
-            fees: 0,
-            Schools: "Public",
-            ages: "3 years to 18 years",
-            workingHours: "Sunday to Thursday [6:00 am - 2:00 pm]",
-            website: "https://moe.gov.bh/",
-            image: "../image/SchoolPageImages/Qurtoba Intermediate Girls.jpg"
+            telephone: "17776664",
+            fees: 1595,
+            Level: "Intermediate",
+            workingHours: "52 hours",
+            website: "https://www.theknowledgeacademy.com/bh/courses/cyber-security-training/",
+            image: "../image/SchoolPageImages/Cybersecurity4.png"
         },
-        Kalthoom: {
-            name: "Um Kalthoom Intermediate School",
-            location: "Isa Town",
-            telephone: "17622639",
+        Fundamentals: {
+            name: "Cybersecurity Fundamentals",
+            location: "Online",
+            telephone: "-",
             fees: 0,
-            Schools: "Public",
-            ages: "11 years to 15 years",
-            workingHours: "Sunday to Thursday [6:00 am - 2:00 pm]",
-            website: "https://moe.gov.bh/",
-            image: "../image/SchoolPageImages/Um Kalthoom Intermediate Girls.jpg"
+            Level: "Beginner",
+            workingHours: "Self-paced",
+            website: "https://www.eccouncil.org/cybersecurity-exchange/cyber-novice/free-cybersecurity-courses-beginners/",
+            image: "../image/SchoolPageImages/Cybersecurity5.png"
+        },
+        Information: {
+            name: "Information Security Professional",
+            location: "Online",
+            telephone: "17663280",
+            fees: 4000,
+            Level: "Intermediate",
+            workingHours: "Self-paced",
+            website: "https://www.simplilearn.com/cyber-security",
+            image: "../image/SchoolPageImages/Cybersecurity6.png"
         }
     };
 
@@ -118,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
             SchoolItem.classList.add('School-item');
             SchoolItem.setAttribute('data-location', School.location);
             SchoolItem.setAttribute('data-fees', parseFloat(School.fees));
-            SchoolItem.setAttribute('data-type', School.Schools);
+            SchoolItem.setAttribute('data-type', School.Level);
 
             SchoolItem.innerHTML = `
                 <img src="${School.image}" alt="${School.name}">
@@ -142,9 +136,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         <h2>Information Card</h2>
                         <p><strong>Location:</strong> ${data.location}</p>
                         <p><strong>Telephone:</strong> ${data.telephone}</p>
-                        <p><strong>Schools:</strong> ${data.Schools}</p>
+                        <p><strong>Level:</strong> ${data.Level}</p>
                         <p><strong>Fees:</strong>  ${data.fees} BD</p>
-                        <p><strong>Working Hours:</strong> ${data.workingHours}</p>
+                        <p><strong>Hours:</strong> ${data.workingHours}</p>
                         <p><strong>Link to Website:</strong> <a href="${data.website}" target="_blank">${data.website}</a></p>
                         <a href="#" class="rate-me-button" id="rate-me-button">Rate Me</a>
                     `;
@@ -252,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const School = SchoolData[key];
             const matchesLocation = selectedLocation === "" || School.location === selectedLocation;
             const matchesPrice = parseFloat(School.fees) <= selectedPrice;
-            const matchesType = !selectedType || School.Schools === selectedType;
+            const matchesType = !selectedType || School.Level === selectedType;
             return matchesLocation && matchesPrice && matchesType;
         }).reduce((obj, key) => {
             obj[key] = SchoolData[key];

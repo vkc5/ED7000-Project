@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Beginner",
             workingHours: "10 hours per week",
             website: "https://mildaintrainings.com/cyber-security/bahrain-bh/",
-            image: "../image/NurseryImages/Evolution.JPG"
+            image: "../image/NurseryImages/Cybersecurity1.png"
         },
         Hacker: {
             name: "Certified Ethical Hacker",
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Intermediate",
             workingHours: "Contact academy for schedule",
             website: "https://learnerspoint.org/cyber-security-courses-in-bahrain",
-            image: "../image/NurseryImages/KG Kids.jpg"
+            image: "../image/NurseryImages/Cybersecurity2.png"
         },
         CompTIA: {
             name: "CompTIA Security+",
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Beginner",
             workingHours: "32 hours",
             website: "https://www.edoxi.com/bahrain/cyber-security-courses",
-            image: "../image/NurseryImages/Little Gems Pre School.jpg"
+            image: "../image/NurseryImages/Cybersecurity3.png"
         },
         Cyber: {
             name: "Certified Cyber Security Professional",
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Intermediate",
             workingHours: "52 hours",
             website: "https://www.theknowledgeacademy.com/bh/courses/cyber-security-training/",
-            image: "../image/NurseryImages/Masabeeh Al Amal Preschool.jpg"
+            image: "../image/NurseryImages/Cybersecurity4.png"
         },
         Fundamentals: {
             name: "Cybersecurity Fundamentals",
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Beginner",
             workingHours: "Self-paced",
             website: "https://www.eccouncil.org/cybersecurity-exchange/cyber-novice/free-cybersecurity-courses-beginners/",
-            image: "../image/NurseryImages/Evolution.JPG"
+            image: "../image/NurseryImages/Cybersecurity5.png"
         },
         Information: {
             name: "Information Security Professional",
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Intermediate",
             workingHours: "Self-paced",
             website: "https://www.simplilearn.com/cyber-security",
-            image: "../image/NurseryImages/Reach Nursery.jpg"
+            image: "../image/NurseryImages/Cybersecurity6.png"
         }
     };
 

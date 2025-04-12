@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const locationFilter = document.getElementById('location-filter');
     const SchoolGrid = document.querySelector('.School-grid');
 
-    const maxPrice = 18000;  // Assuming 18,000 BD is the max value
+    const maxPrice = 10000;  // Assuming 18,000 BD is the max value
     priceFilter.max = maxPrice;
     priceFilter.value = maxPrice; // Set the initial value to max
     priceOutput.textContent = `BD ${maxPrice}`; // Display initial price

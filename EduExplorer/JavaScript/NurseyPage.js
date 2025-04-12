@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const locationFilter = document.getElementById('location-filter');
     const NurseyGrid = document.querySelector('.Nursey-grid');
 
-    const maxPrice = 18000;  // Assuming 18,000 BD is the max value
+    const maxPrice = 10000;  // Assuming 18,000 BD is the max value
     priceFilter.max = maxPrice;
     priceFilter.value = maxPrice; // Set the initial value to max
     priceOutput.textContent = `BD ${maxPrice}`; // Display initial price
@@ -30,64 +30,64 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const NurseyData = {
         CISA: {
-            name: "CISA Certification Training",
-            location: "Isa Town",
+            name: "Web Development Bootcamp",
+            location: "Online",
             telephone: "-",
-            fees: 900,
+            fees: 650,
             Level: "Beginner",
-            workingHours: "10 hours per week",
-            website: "https://mildaintrainings.com/cyber-security/bahrain-bh/",
-            image: "../image/NurseryImages/Cybersecurity1.png"
+            workingHours: "8 hours per week",
+            website: "https://www.udemy.com/course/the-web-developer-bootcamp/",
+            image: "../image/NurseryImages/Programming1.jpg"
         },
         Hacker: {
-            name: "Certified Ethical Hacker",
-            location: "Lary Al Shaikh",
-            telephone: "13300005",
-            fees: 550,
-            Level: "Intermediate",
-            workingHours: "Contact academy for schedule",
-            website: "https://learnerspoint.org/cyber-security-courses-in-bahrain",
-            image: "../image/NurseryImages/Cybersecurity2.png"
-        },
-        CompTIA: {
-            name: "CompTIA Security+",
-            location: "Saar",
-            telephone: "17694356",
-            fees: 795,
-            Level: "Beginner",
-            workingHours: "32 hours",
-            website: "https://www.edoxi.com/bahrain/cyber-security-courses",
-            image: "../image/NurseryImages/Cybersecurity3.png"
-        },
-        Cyber: {
-            name: "Certified Cyber Security Professional",
-            location: "Manama",
-            telephone: "17776664",
-            fees: 1595,
-            Level: "Intermediate",
-            workingHours: "52 hours",
-            website: "https://www.theknowledgeacademy.com/bh/courses/cyber-security-training/",
-            image: "../image/NurseryImages/Cybersecurity4.png"
-        },
-        Fundamentals: {
-            name: "Cybersecurity Fundamentals",
+            name: "Python for Beginners",
             location: "Online",
             telephone: "-",
-            fees: 0,
+            fees: 350,
             Level: "Beginner",
-            workingHours: "Self-paced",
-            website: "https://www.eccouncil.org/cybersecurity-exchange/cyber-novice/free-cybersecurity-courses-beginners/",
-            image: "../image/NurseryImages/Cybersecurity5.png"
+            workingHours: "6 hours per week",
+            website: "https://www.coursera.org/learn/python",
+            image: "../image/NurseryImages/Programming2.jpg"
         },
-        Information: {
-            name: "Information Security Professional",
+        CompTIA: {
+            name: "Java Programming Essentials",
+            location: "Manama",
+            telephone: "77900808",
+            fees: 780,
+            Level: "Intermediate",
+            workingHours: "10 hours per week",
+            website: "https://trainme.bh/",
+            image: "../image/NurseryImages/Programming3.jpg"
+        },
+        Cyber: {
+            name: "Flutter App Development",
+            location: "Seef",
+            telephone: "17816357",
+            fees: 720,
+            Level: "Intermediate",
+            workingHours: "12 weeks",
+            website: "https://generalassemb.ly/",
+            image: "../image/NurseryImages/Programming5.jpg"
+        },
+        Fundamentals: {
+            name: "Data Structures & Algorithms",
             location: "Online",
-            telephone: "17663280",
-            fees: 4000,
+            telephone: "-",
+            fees: 500,
             Level: "Intermediate",
             workingHours: "Self-paced",
-            website: "https://www.simplilearn.com/cyber-security",
-            image: "../image/NurseryImages/Cybersecurity6.png"
+            website: "https://www.theknowledgeacademy.com/bh/courses/programming-training/data-structure-and-algorithm-training/",
+            image: "../image/NurseryImages/Programming7.jpg"
+        },
+        Information: {
+            name: "Full Stack Developer Program",
+            location: "Karbabad",
+            telephone: "16160101",
+            fees: 7000,
+            Level: "Beginner",
+            workingHours: "Self-paced",
+            website: "https://reboot01.com/",
+            image: "../image/NurseryImages/Programming6.jpg"
         }
     };
 

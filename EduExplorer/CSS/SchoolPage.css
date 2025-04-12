@@ -656,7 +656,7 @@ body {
   }
   
 .schoolDescText h1 {
-    font-size: 4.5em;
+    font-size: 4em;
     margin-bottom: 20px;
     font-family: 'Trajan Pro', sans-serif;
 }
@@ -734,7 +734,7 @@ body {
 }
 /* News Card Content */
 .news-card h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 10px;
 }
 

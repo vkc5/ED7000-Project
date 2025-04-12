@@ -1,5 +1,5 @@
 body {
-    background-color: #e0c5bf;
+    background-color: #ddd7ba;
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
@@ -570,7 +570,7 @@ body {
     justify-content: center;
     align-items: center; 
     gap: 30px; 
-    background-color: #e0c5bf	; 
+    background-color: #ddd7ba	; 
     flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
 }
 
@@ -649,7 +649,7 @@ body {
   }
   
 .nurseryDescText h1 {
-    font-size: 4.5em;
+    font-size: 4em;
     margin-bottom: 20px;
     font-family:'Trajan Pro', sans-serif;
 }
@@ -666,7 +666,7 @@ body {
     padding: 20px;
     font-family: serif;
     color: #333;
-    background-color: #e0c5bf;
+    background-color: #ddd7ba;
 }
 
 .faq-container h1 {
@@ -771,7 +771,7 @@ body {
     background-color: #e9e9e9;
     padding: 10px;
     border-radius: 5px;
-    background-color: #e0c5bf;
+    background-color: #ddd7ba;
 }
 
 .social-media img {

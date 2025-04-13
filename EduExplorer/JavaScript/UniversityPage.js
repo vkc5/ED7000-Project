@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const locationFilter = document.getElementById('location-filter');
     const collegeGrid = document.querySelector('.college-grid');
 
-    const maxPrice = 18000;  // Assuming 18,000 BD is the max value
+    const maxPrice = 10000;  // Assuming 18,000 BD is the max value
     priceFilter.max = maxPrice;
     priceFilter.value = maxPrice; // Set the initial value to max
     priceOutput.textContent = `BD ${maxPrice}`; // Display initial price
@@ -30,70 +30,64 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const universityData = {
         asu: {
-            name: "Applied Science University",
-            location: "Eker",
-            telephone: "17728777",
-            Colleges: "Private",
-            fees: 12420,
-            ages: "18 years and above",
-            workingHours: "Sunday to Thursday [8:00 am - 5:00 pm]",
-            website: "https://www.asu.edu.bh/",
-            image: "../image/UniversityImages/Applied Science University.jpg"
+            name: "CCNA",
+            location: "Manama",
+            telephone: "77900808",
+            fees: 850,
+            Level: "Intermediate",
+            workingHours: "10 hours per week",
+            website: "https://trainme.bh/cisco-certified-network-associate-ccna/",
+            image: "../image/SchoolPageImages/Cybersecurity1.png"
         },
         bu: {
-            name: "British University",
-            location: "Saar",
-            telephone: "17130303",
-            Colleges: "Private",
-            fees: 7000,
-            ages: "18 years and above",
-            workingHours: "Sunday to Thursday [8:30 am - 4:30 pm]",
-            website: "https://bub.bh/",
-            image: "../image/UniversityImages/British University.jpeg"
+            name: "CompTIA Network+",
+            location: "Online",
+            telephone: "-",
+            fees: 680,
+            Level: "Beginner",
+            workingHours: "8 hours per week",
+            website: "https://www.comptia.org/certifications/network",
+            image: "../image/SchoolPageImages/Cybersecurity2.png"
         },
         rcsi: {
-            name: "RCSI",
-            location: "Busaiteen",
-            telephone: "17351450",
-            Colleges: "Private",
-            fees: 14900,
-            ages: "18 years and above",
-            workingHours: "Sunday to Thursday [8:00 am - 5:00 pm]",
-            website: "https://www.rcsi.com/bahrain/",
-            image: "../image/UniversityImages/RCSI.jpg"
+            name: "Network Engineer Program",
+            location: "Seef",
+            telephone: "17816357",
+            fees: 2500,
+            Level: "Intermediate",
+            workingHours: "12 weeks",
+            website: "https://bahrain.generalassemb.ly/program-catalog",
+            image: "../image/SchoolPageImages/Cybersecurity3.png"
         },
         bp: {
-            name: "Bahrain Polytechnic",
-            location: "Isa Town",
-            telephone: "17897000",
-            Colleges: "Public",
-            fees: 120,
-            ages: "18 years and above",
-            workingHours: "Sunday to Thursday [8:00 am - 5:00 pm]",
-            website: "https://www.polytechnic.bh/",
-            image: "../image/UniversityImages/Bahrain Polytechnic.jpg"
+            name: "AWS Cloud Practitioner",
+            location: "Adliya",
+            telephone: "17746746",
+            fees: 1140,
+            Level: "Beginner",
+            workingHours: "30 hours",
+            website: "https://thinksmartgulf.com/courses/aws-cloud-practitioner/",
+            image: "../image/SchoolPageImages/Cybersecurity4.png"
         },
         uob: {
-            name: "University of Bahrain",
-            location: "Zallaq",
-            telephone: "17438888",
-            Colleges: "Public",
-            fees: 136,
-            ages: "18 years and above",
-            workingHours: "Sunday to Thursday [8:00 am - 9:00 pm]",
-            website: "https://www.uob.edu.bh/",
-            image: "../image/UniversityImages/University of Bahrain.jpg"
+            name: "CCNA (Routing & Switching)",
+            location: "Online",
+            telephone: "17535393",
+            fees: 1700,
+            Level: "Intermediate",
+            workingHours: "80 Hours",
+            website: "https://trainingplusbh.com/courses/ccna-routing-switching/",
+            image: "../image/SchoolPageImages/Cybersecurity5.png"
         },
         bibf: {
-            name: "BIBF University",
-            location: "Manama",
-            telephone: "17815555",
-            Colleges: "Private",
-            fees: 4000,
-            ages: "18 years and above",
-            workingHours: "Sunday to Thursday [7:00 am – 7:00 pm]",
-            website: "https://www.bibf.com/",
-            image: "../image/UniversityImages/BIBF-Building.jpg"
+            name: "Networking Basics (Cisco)",
+            location: "Online",
+            telephone: "-",
+            fees: 0,
+            Level: "Beginner",
+            workingHours: "5 hours per week",
+            website: "https://skillsforall.com/course/networking-basics",
+            image: "../image/SchoolPageImages/Cybersecurity6.png"
         }
     };
 
@@ -118,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
             collegeItem.classList.add('college-item');
             collegeItem.setAttribute('data-location', college.location);
             collegeItem.setAttribute('data-fees', parseFloat(college.fees));
-            collegeItem.setAttribute('data-type', college.Colleges);
+            collegeItem.setAttribute('data-type', college.Level);
 
             collegeItem.innerHTML = `
                 <img src="${college.image}" alt="${college.name}">
@@ -142,9 +136,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         <h2>Information Card</h2>
                         <p><strong>Location:</strong> ${data.location}</p>
                         <p><strong>Telephone:</strong> ${data.telephone}</p>
-                        <p><strong>Colleges:</strong> ${data.Colleges}</p>
+                        <p><strong>Level:</strong> ${data.Level}</p>
                         <p><strong>Fees:</strong>  ${data.fees} BD</p>
-                        <p><strong>Working Hours:</strong> ${data.workingHours}</p>
+                        <p><strong>Duration:</strong> ${data.workingHours}</p>
                         <p><strong>Link to Website:</strong> <a href="${data.website}" target="_blank">${data.website}</a></p>
                         <a href="#" class="rate-me-button" id="rate-me-button">Rate Me</a>
                     `;
@@ -252,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const college = universityData[key];
             const matchesLocation = selectedLocation === "" || college.location === selectedLocation;
             const matchesPrice = parseFloat(college.fees) <= selectedPrice;
-            const matchesType = !selectedType || college.Colleges === selectedType;
+            const matchesType = !selectedType || college.Level === selectedType;
             return matchesLocation && matchesPrice && matchesType;
         }).reduce((obj, key) => {
             obj[key] = universityData[key];

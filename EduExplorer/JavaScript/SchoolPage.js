@@ -40,23 +40,23 @@ document.addEventListener('DOMContentLoaded', function () {
             image: "../image/SchoolPageImages/Cybersecurity1.png"
         },
         Hacker: {
-            name: "Certified Ethical Hacker",
-            location: "Lary Al Shaikh",
-            telephone: "13300005",
-            fees: 550,
+            name: "Cybersecurity Essentials Course",
+            location: "Riffa",
+            telephone: "13300001",
+            fees: 100,
             Level: "Intermediate",
-            workingHours: "Contact academy for schedule",
-            website: "https://learnerspoint.org/cyber-security-courses-in-bahrain",
+            workingHours: "10 hours",
+            website: "https://www.ku.edu.bh/event/cybersecurity-essentials/",
             image: "../image/SchoolPageImages/Cybersecurity2.png"
         },
         CompTIA: {
             name: "CompTIA Security+",
             location: "Saar",
-            telephone: "17694356",
-            fees: 795,
+            telephone: "17535393",
+            fees: 650,
             Level: "Beginner",
-            workingHours: "32 hours",
-            website: "https://www.edoxi.com/bahrain/cyber-security-courses",
+            workingHours: "48 hours",
+            website: "https://trainingplusbh.com/courses/comptia-security/",
             image: "../image/SchoolPageImages/Cybersecurity3.png"
         },
         Cyber: {
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p><strong>Telephone:</strong> ${data.telephone}</p>
                         <p><strong>Level:</strong> ${data.Level}</p>
                         <p><strong>Fees:</strong>  ${data.fees} BD</p>
-                        <p><strong>Hours:</strong> ${data.workingHours}</p>
+                        <p><strong>Duration:</strong> ${data.workingHours}</p>
                         <p><strong>Link to Website:</strong> <a href="${data.website}" target="_blank">${data.website}</a></p>
                         <a href="#" class="rate-me-button" id="rate-me-button">Rate Me</a>
                     `;

@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p><strong>Telephone:</strong> ${data.telephone}</p>
                         <p><strong>Level:</strong> ${data.Level}</p>
                         <p><strong>Fees:</strong>  ${data.fees} BD</p>
-                        <p><strong>Hours:</strong> ${data.workingHours}</p>
+                        <p><strong>Duration:</strong> ${data.workingHours}</p>
                         <p><strong>Link to Website:</strong> <a href="${data.website}" target="_blank">${data.website}</a></p>
                         <a href="#" class="rate-me-button" id="rate-me-button">Rate Me</a>
                     `;

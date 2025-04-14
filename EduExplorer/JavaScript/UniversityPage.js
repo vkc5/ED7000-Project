@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Intermediate",
             workingHours: "10 hours per week",
             website: "https://trainme.bh/cisco-certified-network-associate-ccna/",
-            image: "../image/SchoolPageImages/Cybersecurity1.png"
+            image: "../image/UniversityImages/Networking1.jpg"
         },
         bu: {
             name: "CompTIA Network+",
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Beginner",
             workingHours: "8 hours per week",
             website: "https://www.comptia.org/certifications/network",
-            image: "../image/SchoolPageImages/Cybersecurity2.png"
+            image: "../image/UniversityImages/Networking2.png"
         },
         rcsi: {
             name: "Network Engineer Program",
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Intermediate",
             workingHours: "12 weeks",
             website: "https://bahrain.generalassemb.ly/program-catalog",
-            image: "../image/SchoolPageImages/Cybersecurity3.png"
+            image: "../image/UniversityImages/Networking3.jpg"
         },
         bp: {
             name: "AWS Cloud Practitioner",
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Beginner",
             workingHours: "30 hours",
             website: "https://thinksmartgulf.com/courses/aws-cloud-practitioner/",
-            image: "../image/SchoolPageImages/Cybersecurity4.png"
+            image: "../image/UniversityImages/Networking4.png"
         },
         uob: {
             name: "CCNA (Routing & Switching)",
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Intermediate",
             workingHours: "80 Hours",
             website: "https://trainingplusbh.com/courses/ccna-routing-switching/",
-            image: "../image/SchoolPageImages/Cybersecurity5.png"
+            image: "../image/UniversityImages/Networking5.jpg"
         },
         bibf: {
             name: "Networking Basics (Cisco)",
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Level: "Beginner",
             workingHours: "5 hours per week",
             website: "https://skillsforall.com/course/networking-basics",
-            image: "../image/SchoolPageImages/Cybersecurity6.png"
+            image: "../image/UniversityImages/Networking6.png"
         }
     };
 

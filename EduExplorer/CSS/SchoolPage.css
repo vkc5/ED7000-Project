@@ -22,7 +22,7 @@ body {
 }
 
 #background {
-    background-image: url('../image/SchoolPageImages/K12.jpg'); /* Path to your background image */
+    background-image: url('../image/SchoolPageImages/Cyber-Main.jpg'); /* Path to your background image */
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling of the image */
